@@ -26,7 +26,7 @@ public class Program01 {
 		
 		List<WebElement>companyList= driver.findElements(By.xpath("//table[@class='dataTable']//tbody//tr//td[1]"));
 		
-		for(WebElement x:companyList)// list out the headers
+		for(WebElement x:companyList)// list out the column values
 		{
 			System.out.println(x.getText());
 		}
@@ -35,7 +35,7 @@ System.out.println("The %change list are as follows//////////");
 		
 		List<WebElement>changeList= driver.findElements(By.xpath("//table[@class='dataTable']//tbody//tr//td[5]"));
 		
-		for(WebElement x:changeList)// list out the headers
+		for(WebElement x:changeList)// list out the column values
 		{
 			System.out.println(x.getText());
 		}

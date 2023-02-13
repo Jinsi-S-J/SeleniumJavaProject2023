@@ -18,7 +18,7 @@ public class Program02 {
 		List<WebElement>companyList= driver.findElements(By.xpath("//table[@class='dataTable']//tbody//tr//td[1]"));
 		System.out.println("The row list are as follows//////////");
 		int row=1;
-		for(WebElement x:companyList )
+		for(WebElement x:companyList )// to List out all the details of company name Bata
 		{
 
 			if(x.getText().contains("Bata"))
